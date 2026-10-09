@@ -1,0 +1,68 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-top: 0.5rem;
+}
+
+#colors label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+#parts {
+  list-style: none;
+  padding: 0;
+}
+
+#parts li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.part-num {
+  font-family: monospace;
+  min-width: 7rem;
+}
+
+.name {
+  flex: 1;
+}
+
+.swatches {
+  display: flex;
+  gap: 2px;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #888;
+  background-color: var(--c);
+}
+
+/* Transparent colors: checkerboard behind a semi-transparent fill, so Red and Trans-Red differ. */
+.swatch.trans {
+  background:
+    linear-gradient(color-mix(in srgb, var(--c) 60%, transparent), color-mix(in srgb, var(--c) 60%, transparent)),
+    repeating-conic-gradient(#bbb 0 25%, #fff 0 50%) 0 0 / 0.5rem 0.5rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+}

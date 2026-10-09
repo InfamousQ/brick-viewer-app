@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brick Viewer</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <h1>Parts</h1>
+
+  <fieldset id="filter">
+    <legend>Colors</legend>
+    <div id="match">
+      <label><input type="radio" name="match" value="any" checked> any of these</label>
+      <label><input type="radio" name="match" value="all"> all of these</label>
+    </div>
+    <div id="colors"></div>
+  </fieldset>
+
+  <p id="status">Loading…</p>
+  <ul id="parts"></ul>
+
+  <footer>
+    Catalog data from <a href="https://rebrickable.com/">Rebrickable</a>.
+  </footer>
+</body>
+</html>
