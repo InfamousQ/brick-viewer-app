@@ -1,0 +1,9 @@
+{
+  "catalog": {
+    "parts": "https://raw.githubusercontent.com/InfamousQ/brick-viewer-catalog/main/data/parts.json",
+    "colors": "https://raw.githubusercontent.com/InfamousQ/brick-viewer-catalog/main/data/colors.json",
+    "part_colors": "https://raw.githubusercontent.com/InfamousQ/brick-viewer-catalog/main/data/part_colors.json",
+    "categories": "https://raw.githubusercontent.com/InfamousQ/brick-viewer-catalog/main/data/categories.json",
+    "mold_groups": "https://raw.githubusercontent.com/InfamousQ/brick-viewer-catalog/main/data/mold_groups.json"
+  }
+}
